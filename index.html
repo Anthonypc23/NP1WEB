@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lei de OHM</title>
     <link rel="stylesheet" href="style.css">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 </head>
 
 <body>
@@ -34,30 +36,36 @@
                         suas
                         propriedades:
                     </p>
+                    <div class="flashcards">
+                        <div class="cards">
+                            <h2>Gerador</h2>
+                            <p>
+                                Um gerador transforma um tipo de energia em elétrica por indução magnética.
+                            </p>
+                        </div>
 
-                    <div class="cards">
-                        <h2>Gerador</h2>
-                        <p>
-                            Um gerador transforma um tipo de energia em elétrica por indução magnética.
-                        </p>
-                    </div>
+                        <div class="cards">
+                            <h2>Receptor</h2>
+                            <p>
+                                Dispositivo que recebe energia elétrica e converte em outro tipo de energia.
+                            </p>
+                        </div>
 
-                    <div class="cards">
-                        <h2>Receptor</h2>
-                        <p>
-                            Dispositivo que recebe energia elétrica e converte em outro tipo de energia.
-                        </p>
-                    </div>
+                        <div class="cards">
+                            <h2>Condutor</h2>
+                            <p>
+                                material que permite a passagem de corrente elétrica com facilidade
+                            </p>
+                        </div>
 
-                    <div class="cards">
-                        <h2>Condutor</h2>
-                        <p>
-                            material que permite a passagem de corrente elétrica com facilidade
-                        </p>
                     </div>
 
                     <p>
-                        Dito isso  George Simons OHM em 1827, foi o responsável por descobrir como se calcula as grandezas que operam nessas propriedades eletronicas, ele entendeu que, a relação entre tensão (V), corrente elétrica (I) e resistência (R) em um circuito elétrico é diretamente proporcional à corrente que passa por ele, desde que a resistência permaneça constante. Essa descoberta foi fundamental para o desenvolvimento da eletricidade e eletrônica moderna.
+                        Dito isso George Simons OHM em 1827, foi o responsável por descobrir como se calcula as
+                        grandezas que operam nessas propriedades eletronicas, ele entendeu que, a relação entre tensão
+                        (V), corrente elétrica (I) e resistência (R) em um circuito elétrico é diretamente proporcional
+                        à corrente que passa por ele, desde que a resistência permaneça constante. Essa descoberta foi
+                        fundamental para o desenvolvimento da eletricidade e eletrônica moderna.
                     </p>
 
 
@@ -83,19 +91,66 @@
             <div class="caixa">
                 <div class="bloco1">
 
+                    <p>
+                        Como foi falado na introdução as grandezas que operam no circuito elétrico são gradezas
+                        proporcionais, com isso temos a primeira lei de Ohm onde determina que ,a diferença de potencial
+                        entre dois pontos de um resistor é proporcional à corrente elétrica que é estabelecida nele.
+                        <br>
+                        Segue abaixo os parametros da primeira lei de Ohm:
+                    </p>
+
+                    <div class="flashcards">
+                        <div class="cards">
+                            <h2>$$U ou V$$</h2>
+                            <p> (Voltagem ou Tensão Elétrica): Medida em volts (V), representa a diferença de potencial
+                                elétrico entre dois pontos do circuito. É o que "empurra" os elétrons pelo condutor.</p>
+
+                        </div>
+
+                        <div class="cards">
+                            <h2>$$R (Ω)$$</h2>
+                            <p>
+                                (Resistência Elétrica): Medida em ohms (Ω), é a oposição que um material oferece à
+                                passagem da corrente elétrica.
+                            </p>
+                        </div>
+
+                        <div class="cards">
+                            <h2>$$I$$</h2>
+                            <p>
+                                (Corrente Elétrica): Medida em ampères (A), indica a quantidade de carga elétrica que
+                                passa por um ponto do circuito em um segundo.
+                            </p>
+                        </div>
+
+
+                    </div>
+
+                    <p>
+                        Com isso temos as seguintes expressões:
+                    </p>
+
+
                 </div>
 
                 <div class="bloco2">
 
                     <div class="container">
+
                         <div class="box">
-                            <h2>V = resistência</h2>
+                            <h2>Expressões</h2>
+
+                            <img src="ohm.png.png" alt="">
+                        </div>
+
+                        <div class="box">
+                            <h2>$$ U = R \cdot I $$</h2>
                         </div>
                         <div class="box">
-                            <h2>V = resistência</h2>
+                            <h2>$$ R = \frac {U}{I} $$</h2>
                         </div>
                         <div class="box">
-                            <h2>V = resistência</h2>
+                            <h2>$$ I = \frac {V}{R} $$</h2>
                         </div>
                     </div>
 
@@ -112,15 +167,65 @@
             <div class="caixa">
                 <div class="bloco1">
 
+                    <p>
+                        Agora que entendemos a relação entre Tensão, Resistência e Corrente elétrica, é importante
+                        adicionar mais lógica ao conceito. Em um circuito elétrico, não podemos considerar apenas esses
+                        três fatores; também devemos levar em conta as dimensões do condutor e a resistividade do
+                        material utilizado. Para isso, Ohm desenvolveu parâmetros adicionais que nos ajudam a calcular e
+                        compreender melhor a resistência elétrica em diferentes condições :
+                    </p>
+
+                    <div class="flashcards">
+                        <div class="cards">
+                            <h2>$$R (Ω)$$</h2>
+                            <p>
+                                (Resistência Elétrica): Medida em ohms (Ω), é a oposição que um material oferece à
+                                passagem da corrente elétrica.
+                            </p>
+                        </div>
+
+                        <div class="cards">
+                            <h2>$$ρ (Ω \cdot m)$$</h2>
+                            <p>Resistividade do material: Mede a sua capacidade de resistir ao fluxo de corrente elétrica, influenciando a resistência do material em relação à sua forma e tamanho.</p>
+
+                        </div>
+
+
+                        <div class="cards">
+                            <h2>$$L$$</h2>
+                            <p>
+                                Comprimento: Quanto maior o comprimento do fio, maior a resistência, pois os elétrons encontram mais obstáculos ao percorrerem um caminho mais longo.
+                            </p>
+                        </div>
+
+                        <div class="cards">
+                            <h2>$$A$$</h2>
+                            <p>
+                                Área: Quanto maior a área do condutor, menor a resistência, pois há mais espaço para os elétrons fluírem, reduzindo as colisões e a oposição ao movimento da corrente elétrica.
+                            </p>
+                        </div>
+
+
+                    </div>
+
+                    <p>
+                        Graças a isso temos uma nova equação também:
+                    </p>
+
+
                 </div>
 
                 <div class="bloco2">
 
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
+                    <div class="container">
+
+                        <div class="box">
+                            <h2>Equação</h2>
+
+                            <p id="segundalei">$$ R = \frac{ρ \cdot L}{A} $$</p>
+                        </div>
+                       
+                    </div>
 
                 </div>
             </div>

@@ -243,6 +243,21 @@ section:last-child {
 
 
 }
+@media (max-width:800px) {
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .box{
+        overflow: visible;
+    }
+
+}
+
 
 @media (max-width:600px) {
 
@@ -267,10 +282,6 @@ section:last-child {
     .container {
         flex-direction: column;
         gap: 30px;
-    }
-
-    .box{
-        overflow: visible;
     }
 
     section header{

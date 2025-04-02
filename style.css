@@ -29,11 +29,13 @@ nav {
     background-color: #094067;
     display: flex;
     align-items: center;
+    justify-content: space-around;
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
     z-index: 1;
+
 }
 
 nav a {
@@ -45,14 +47,6 @@ nav a {
 
 nav a:hover {
     color: #ef4565;
-    /* Altere para a cor desejada */
-}
-
-.linksec {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    gap: 100px;
 }
 
 main {
@@ -72,7 +66,7 @@ main {
 section {
     background-color: #d8eefe;
     border-radius: 20px;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     color: #5f6c7b;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
@@ -95,19 +89,19 @@ section header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 75vh;
+    height: auto;
     width: 100%;
 }
 
 .bloco1 {
-    height: 500px;
+    height: 100%;
     width: 50%;
     font-size: 1rem;
     font-weight: 500;
 
 }
 
-.flashcards{
+.flashcards {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -115,7 +109,7 @@ section header {
     margin-top: 20px;
     margin-bottom: 20px;
     width: 100%;
-    
+
 
 }
 
@@ -130,13 +124,13 @@ section header {
 
 }
 
-.cards p{
-   text-align: start;
-   font-size: 0.9rem;
+.cards p {
+    text-align: start;
+    font-size: 0.9rem;
 
 }
 
-#segundalei{
+#segundalei {
     font-size: 2em;
 }
 
@@ -151,7 +145,7 @@ section header {
     margin-right: -20px;
 }
 
-.bloco2{
+.bloco2 {
     width: 40%;
     display: flex;
     justify-content: center;
@@ -160,7 +154,7 @@ section header {
 
 img,
 .container {
-    height: 500px;
+    max-height: 80vh;
     width: 400px;
     border-radius: 50px;
 
@@ -179,7 +173,6 @@ img,
 }
 
 .box {
-    height: auto;
     width: 100%;
     padding: 1.5rem;
     flex: 0 auto;
@@ -190,8 +183,8 @@ img,
     font-size: 1.5rem;
 }
 
-.box img{
-    
+.box img {
+
     height: 80%;
     width: 100%;
 }
@@ -204,6 +197,93 @@ section:last-child {
     margin-bottom: 1em;
 
 }
+
+/*Tratando a responsividades*/
+
+@media (max-width: 1025px) {
+
+    main {
+
+        padding-left: 0;
+        padding-right: 0;
+        gap: 0;
+
+    }
+
+    section {
+        border-radius: 0;
+    }
+
+    .caixa {
+        flex-direction: column;
+    }
+
+    .bloco1,
+    .bloco2,
+    .container {
+        width: 90%;
+        margin: 20px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .box {}
+
+    img {
+        height: 100%;
+    }
+
+    .box {
+        font-size: 0.9em;
+    }
+
+
+}
+
+@media (max-width:481px) {
+
+    nav {
+        font-size: 0.7em;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
+    .flashcards{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .cards:last-child {
+        margin-right: 0px;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .box{
+        overflow: visible;
+    }
+
+    section header{
+        font-size: 30px
+    }
+
+    img {
+        width: 300px;
+        height: 400px;
+    }
+
+};
+
 
 
 /* #sec1 { background: #ff5733; } Laranja */

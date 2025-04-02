@@ -244,7 +244,7 @@ section:last-child {
 
 }
 
-@media (max-width:481px) {
+@media (max-width:600px) {
 
     nav {
         font-size: 0.7em;

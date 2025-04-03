@@ -85,6 +85,10 @@ section header {
 
 }
 
+section header p{
+    font-size: 2rem;
+}
+
 .caixa {
     display: flex;
     align-items: center;
@@ -115,7 +119,9 @@ section header {
 
 
 .cards {
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
     padding: 1.5rem;
     flex: 0 auto;
     border-radius: 3px;

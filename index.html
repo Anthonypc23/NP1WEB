@@ -12,9 +12,10 @@
 <body>
     <nav>
 
-            <a href="#introducao">Introdução</a>
-            <a href="#sec1">Primeira Lei de Ohm</a>
-            <a href="#sec2">Segunda Lei de Ohm</a>
+        <a href="#introducao">Introdução</a>
+        <a href="#sec1">1° Lei de Ohm</a>
+        <a href="#sec2">2° Lei de Ohm</a>
+        <a href="#sec3">Simulação</a>
 
     </nav>
 
@@ -252,12 +253,75 @@
 
                         </div>
 
-                        
+
                     </div>
                 </div>
             </div>
         </section>
+
+        <section id="sec3">
+
+            <header>
+                <h1>Simulação</h1>
+                <p>
+                    Para facilitar a compreensão das Leis de Ohm, disponibilizamos abaixo duas simulações interativas.
+                    A primeira permite explorar a relação entre tensão, corrente e resistência, enquanto a segunda
+                    demonstra como a resistência elétrica de um condutor varia de acordo com suas dimensões e material.
+                    Ajuste os valores e observe as mudanças em tempo real!
+                </p>
+            </header>
+
+            <div class="caixa">
+
+
+                <div class="flashcards">
+
+
+                    <div class="cards">
+
+                        <h2>Primeira Lei de Ohm</h2>
+                        <label>Tensão (V): <span id="voltageValue">10</span>V</label>
+                        <input type="range" id="voltage" min="1" max="100" value="10">
+
+                        <label>Resistência (Ω): <span id="resistenciaValue">5</span>Ω</label>
+                        <input type="range" id="resistencia" min="1" max="50" value="5">
+
+                        <h3>Resultado:</h3>
+                        <p class="output">Corrente: <span id="currentValue">2.00</span> A</p>
+                    </div>
+
+                    <div class="cards">
+
+                        <h2>Segunda Lei de Ohm</h2>
+
+                        <label>Material:</label>
+                        <select id="material">
+                            <option value="1.68e-8">Cobre (1.68 × 10⁻⁸ Ω·m)</option>
+                            <option value="2.82e-8">Alumínio (2.82 × 10⁻⁸ Ω·m)</option>
+                            <option value="1.10e-6">Grafite (1.10 × 10⁻⁶ Ω·m)</option>
+                        </select>
+
+                        <label>Comprimento (m): <span id="lengthValue">1</span>m</label>
+                        <input type="range" id="length" min="0.1" max="10" step="0.1" value="1">
+
+                        <label>Área da Secção (mm²): <span id="areaValue">1</span>mm²</label>
+                        <input type="range" id="area" min="0.1" max="10" step="0.1" value="1">
+
+                        <h3>Resultado:</h3>
+                        <p class="output">Resistência: <span id="resistanceValue">0.00</span> Ω</p>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+        </section>
+
     </main>
 </body>
+
+<script src="script.js"></script>
 
 </html>
